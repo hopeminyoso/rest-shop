@@ -17,7 +17,7 @@ app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-// Set up CORS - Allowing requests from all origins, you can replace # with specific domains in production
+// Set up CORS - Allowing requests from all origins
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   res.header(
